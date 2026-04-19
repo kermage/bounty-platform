@@ -8,7 +8,7 @@
 // covered by off-chain integration tests (see backend/src/__tests__/).
 // ---------------------------------------------------------------------------
 
-use bounty_platform/types/bounty.{
+use types/bounty.{
   Awarded, BountyDatum, Disputed, Expired, Open,
 }
 

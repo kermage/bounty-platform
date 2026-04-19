@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp //aiagent-machine/openclaw/bounty-platform/contracts/src/validators/bounty_escrow.ak //aiagent-machine/openclaw/bounty-platform/contracts/validators/bounty_escrow.ak)",
+      "Bash(cp //aiagent-machine/openclaw/bounty-platform/contracts/src/types/bounty.ak //aiagent-machine/openclaw/bounty-platform/contracts/lib/types/bounty.ak)",
+      "Bash(cp //aiagent-machine/openclaw/bounty-platform/contracts/src/tests/bounty_escrow_tests.ak //aiagent-machine/openclaw/bounty-platform/contracts/lib/tests/bounty_escrow_tests.ak)",
+      "Bash(cardano-cli --version)"
+    ]
+  }
+}

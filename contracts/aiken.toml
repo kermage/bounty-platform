@@ -1,4 +1,4 @@
-name = "bounty-platform"
+name = "openclaw/bounty-platform"
 version = "0.1.0"
 description = "Aiken contracts for the bounty platform"
 

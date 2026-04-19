@@ -1,10 +1,10 @@
 use aiken/collection/list
 use aiken/crypto.{VerificationKeyHash}
 use aiken/interval
-use cardano/address.{Credential, VerificationKey}
+use cardano/address.{VerificationKey}
 use cardano/assets
 use cardano/transaction.{Output, OutputReference, Transaction}
-use bounty_platform/types/bounty.{
+use types/bounty.{
   Awarded, BountyAction, BountyDatum, BountyStatus, ClaimReward, Open,
   OpenDispute, Refund, ResolveDispute, SubmitWinner,
 }
