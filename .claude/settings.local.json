@@ -4,7 +4,8 @@
       "Bash(cp //aiagent-machine/openclaw/bounty-platform/contracts/src/validators/bounty_escrow.ak //aiagent-machine/openclaw/bounty-platform/contracts/validators/bounty_escrow.ak)",
       "Bash(cp //aiagent-machine/openclaw/bounty-platform/contracts/src/types/bounty.ak //aiagent-machine/openclaw/bounty-platform/contracts/lib/types/bounty.ak)",
       "Bash(cp //aiagent-machine/openclaw/bounty-platform/contracts/src/tests/bounty_escrow_tests.ak //aiagent-machine/openclaw/bounty-platform/contracts/lib/tests/bounty_escrow_tests.ak)",
-      "Bash(cardano-cli --version)"
+      "Bash(cardano-cli --version)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); lovelace=[a for a in d.get\\('amount',[]\\) if a['unit']=='lovelace']; print\\('Balance:', int\\(lovelace[0]['quantity']\\)/1_000_000 if lovelace else 0, 'tADA'\\) if 'amount' in d else print\\(d\\)\")"
     ]
   }
 }

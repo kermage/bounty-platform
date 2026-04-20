@@ -1,0 +1,196 @@
+{
+  "preamble": {
+    "title": "openclaw/bounty-platform",
+    "description": "Aiken contracts for the bounty platform",
+    "version": "0.1.0",
+    "plutusVersion": "v3",
+    "compiler": {
+      "name": "Aiken",
+      "version": "v1.1.21+42babe5"
+    }
+  },
+  "validators": [
+    {
+      "title": "bounty_escrow.bounty_escrow.spend",
+      "datum": {
+        "title": "datum",
+        "schema": {
+          "$ref": "#/definitions/types~1bounty~1BountyDatum"
+        }
+      },
+      "redeemer": {
+        "title": "redeemer",
+        "schema": {
+          "$ref": "#/definitions/types~1bounty~1BountyAction"
+        }
+      },
+      "compiledCode": "5905af010100332229800aba2aba1aba0aab9faab9eaab9dab9a9bae0039bae00248888888896600264653001300a00198051805800cdc3a4005300a0024888966002600460146ea800e26466453001159800980098069baa0028cc004c044c038dd500148c048c04cc04cc04cc04cc04cc04cc04cc04c00646024602660266026602660260032301230133013001918091809800c88c8cc00400400c896600200314a115980099b8f375c602a00200714a313300200230160014040809a601a6ea801e4602460266026602660266026602600323012301330133013301330133013301300192cc004c008c038dd5000c528c528201a48888888888cc8966002601a00d15980098019805980d1baa00c8acc004cc01c008dd71804180d1baa00c89919912cc004c050c070dd500144c966002602a603a6ea8c030c078dd51806180f1baa004899b88001002899b8900100240706eb4c080c074dd500145282036301e301b3754601260366ea8004dd69803180d9baa00d3004301a375402114a080c2294101844c966002602400f132598009809980d9baa0018a508992cc004cc0280140062b300198009bac300c301d375402700199b833003337029064009bad300d301d375401e906400a0088cc004dd61806180e9baa01380d4cdc198019bad300d301d375401e906400a0088a50406d14a080d8dd7180f980e1baa0014068600a60366ea80362b30013370e9002003c566002660100066eb8c024c06cdd5006c4c8cc8966002602a603a6ea800a264b30013016301e3754601a603e6ea8c088c07cdd500244cdc4001000c4cdc4801000a03a375a6042603c6ea800a294101c180f980e1baa301f301c37540026eb4c01cc070dd50071802980d9baa0118a50406515980099b874801801e2b30015980098021806180d9baa00d8a518acc004c048c068dd51806180d9baa00d8a518a50406480ca2b300133008003375c601260366ea80362946264b30013013301b375400314a1133009004375c603e60386ea800501a1802980d9baa00d406514a080ca2b3001330080030178acc00660026eb0c028c06cdd5008cdd7180f180d9baa01499b833001337029064009bad300b301b375401a906400a0048cc004dd61805180d9baa01180c4cdc198009bad300b301b375401a906400a0048a50406514a080c9019203240646e08dd69804980d1baa00c40606eb0c024c060dd50071111919800800802112cc00400629422b30013232598009809180f1baa0018acc004cdc79bae3022301f375400200d13371200a64b30013017301f375400314800226eb4c08cc080dd5000a03c3259800980b980f9baa0018a60103d87a8000899198008009bab30243021375400444b30010018a6103d87a8000899192cc004cdc8a45000018acc004cdc7a44100001899ba548000cc098c0900092f5c114c0103d87a80004089133004004302800340886eb8c088004c094005023203c32330010013756601c60406ea800c896600200314c103d87a8000899192cc004cdc8a45000018acc004cdc7a44100001899ba548000cc094c08c0092f5c114c0103d87a80004085133004004302700340846eb8c084004c0900050224528203a8a5040746042603c6ea8c084c078dd50009810000c528c4cc008008c08400501b203c45900c4c034dd5003cc04400d22259800980200144c8c966002602e0050058b2028375c602a00260226ea802a2b300130080028acc004c044dd5005400e2c80922b30013370e9002001456600260226ea802a00716404915980099b874801800a2b3001301137540150038b20248acc004cdc3a40100051323259800980b80140162c80a0dd7180a80098089baa00a8b201e403c807900f201e180798080009b8748000c02cdd5001c590090c028004c014dd5005452689b2b200626011e581cb5e67fd429ec060988c094bac786376bb0828f6b2dcc13393ca0611d004c011e581cf7d8a6079b833f6dabacd430d9f0d5f311f8bc20ae86803e727f81fc0001",
+      "hash": "3bbe5a07990a5834bcdeebd5414f79bc4e49427e2963b6b6033bb9af"
+    },
+    {
+      "title": "bounty_escrow.bounty_escrow.else",
+      "redeemer": {
+        "schema": {}
+      },
+      "compiledCode": "5905af010100332229800aba2aba1aba0aab9faab9eaab9dab9a9bae0039bae00248888888896600264653001300a00198051805800cdc3a4005300a0024888966002600460146ea800e26466453001159800980098069baa0028cc004c044c038dd500148c048c04cc04cc04cc04cc04cc04cc04cc04c00646024602660266026602660260032301230133013001918091809800c88c8cc00400400c896600200314a115980099b8f375c602a00200714a313300200230160014040809a601a6ea801e4602460266026602660266026602600323012301330133013301330133013301300192cc004c008c038dd5000c528c528201a48888888888cc8966002601a00d15980098019805980d1baa00c8acc004cc01c008dd71804180d1baa00c89919912cc004c050c070dd500144c966002602a603a6ea8c030c078dd51806180f1baa004899b88001002899b8900100240706eb4c080c074dd500145282036301e301b3754601260366ea8004dd69803180d9baa00d3004301a375402114a080c2294101844c966002602400f132598009809980d9baa0018a508992cc004cc0280140062b300198009bac300c301d375402700199b833003337029064009bad300d301d375401e906400a0088cc004dd61806180e9baa01380d4cdc198019bad300d301d375401e906400a0088a50406d14a080d8dd7180f980e1baa0014068600a60366ea80362b30013370e9002003c566002660100066eb8c024c06cdd5006c4c8cc8966002602a603a6ea800a264b30013016301e3754601a603e6ea8c088c07cdd500244cdc4001000c4cdc4801000a03a375a6042603c6ea800a294101c180f980e1baa301f301c37540026eb4c01cc070dd50071802980d9baa0118a50406515980099b874801801e2b30015980098021806180d9baa00d8a518acc004c048c068dd51806180d9baa00d8a518a50406480ca2b300133008003375c601260366ea80362946264b30013013301b375400314a1133009004375c603e60386ea800501a1802980d9baa00d406514a080ca2b3001330080030178acc00660026eb0c028c06cdd5008cdd7180f180d9baa01499b833001337029064009bad300b301b375401a906400a0048cc004dd61805180d9baa01180c4cdc198009bad300b301b375401a906400a0048a50406514a080c9019203240646e08dd69804980d1baa00c40606eb0c024c060dd50071111919800800802112cc00400629422b30013232598009809180f1baa0018acc004cdc79bae3022301f375400200d13371200a64b30013017301f375400314800226eb4c08cc080dd5000a03c3259800980b980f9baa0018a60103d87a8000899198008009bab30243021375400444b30010018a6103d87a8000899192cc004cdc8a45000018acc004cdc7a44100001899ba548000cc098c0900092f5c114c0103d87a80004089133004004302800340886eb8c088004c094005023203c32330010013756601c60406ea800c896600200314c103d87a8000899192cc004cdc8a45000018acc004cdc7a44100001899ba548000cc094c08c0092f5c114c0103d87a80004085133004004302700340846eb8c084004c0900050224528203a8a5040746042603c6ea8c084c078dd50009810000c528c4cc008008c08400501b203c45900c4c034dd5003cc04400d22259800980200144c8c966002602e0050058b2028375c602a00260226ea802a2b300130080028acc004c044dd5005400e2c80922b30013370e9002001456600260226ea802a00716404915980099b874801800a2b3001301137540150038b20248acc004cdc3a40100051323259800980b80140162c80a0dd7180a80098089baa00a8b201e403c807900f201e180798080009b8748000c02cdd5001c590090c028004c014dd5005452689b2b200626011e581cb5e67fd429ec060988c094bac786376bb0828f6b2dcc13393ca0611d004c011e581cf7d8a6079b833f6dabacd430d9f0d5f311f8bc20ae86803e727f81fc0001",
+      "hash": "3bbe5a07990a5834bcdeebd5414f79bc4e49427e2963b6b6033bb9af"
+    }
+  ],
+  "definitions": {
+    "ByteArray": {
+      "dataType": "bytes"
+    },
+    "Int": {
+      "dataType": "integer"
+    },
+    "Option<ByteArray>": {
+      "title": "Option",
+      "anyOf": [
+        {
+          "title": "Some",
+          "description": "An optional value.",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        },
+        {
+          "title": "None",
+          "description": "Nothing.",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        }
+      ]
+    },
+    "aiken/crypto/VerificationKeyHash": {
+      "title": "VerificationKeyHash",
+      "dataType": "bytes"
+    },
+    "types/bounty/BountyAction": {
+      "title": "BountyAction",
+      "anyOf": [
+        {
+          "title": "SubmitWinner",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "winner",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        },
+        {
+          "title": "ClaimReward",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        },
+        {
+          "title": "Refund",
+          "dataType": "constructor",
+          "index": 2,
+          "fields": []
+        },
+        {
+          "title": "OpenDispute",
+          "dataType": "constructor",
+          "index": 3,
+          "fields": []
+        },
+        {
+          "title": "ResolveDispute",
+          "dataType": "constructor",
+          "index": 4,
+          "fields": [
+            {
+              "title": "winner",
+              "$ref": "#/definitions/ByteArray"
+            }
+          ]
+        }
+      ]
+    },
+    "types/bounty/BountyDatum": {
+      "title": "BountyDatum",
+      "anyOf": [
+        {
+          "title": "BountyDatum",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": [
+            {
+              "title": "bounty_id",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "creator",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "reward_amount",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "token_policy",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "token_name",
+              "$ref": "#/definitions/ByteArray"
+            },
+            {
+              "title": "platform_fee_percent",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "deadline",
+              "$ref": "#/definitions/Int"
+            },
+            {
+              "title": "winner",
+              "$ref": "#/definitions/Option<ByteArray>"
+            },
+            {
+              "title": "status",
+              "$ref": "#/definitions/types~1bounty~1BountyStatus"
+            }
+          ]
+        }
+      ]
+    },
+    "types/bounty/BountyStatus": {
+      "title": "BountyStatus",
+      "anyOf": [
+        {
+          "title": "Open",
+          "dataType": "constructor",
+          "index": 0,
+          "fields": []
+        },
+        {
+          "title": "Awarded",
+          "dataType": "constructor",
+          "index": 1,
+          "fields": []
+        },
+        {
+          "title": "Disputed",
+          "dataType": "constructor",
+          "index": 2,
+          "fields": []
+        },
+        {
+          "title": "Expired",
+          "dataType": "constructor",
+          "index": 3,
+          "fields": []
+        }
+      ]
+    }
+  }
+}
