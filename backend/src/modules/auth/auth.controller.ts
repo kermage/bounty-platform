@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { handleGoogleSignIn } from './auth.service.js';
+import { handleGoogleSignIn } from './auth.service';
 
 export async function googleSignIn(req: Request, res: Response): Promise<void> {
   try {

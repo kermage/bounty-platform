@@ -1,6 +1,6 @@
 import { Response } from 'express';
-import { AuthRequest } from '../../middleware/auth.js';
-import { createWalletForUser, getWalletForUser } from './wallet.service.js';
+import { AuthRequest } from '../../middleware/auth';
+import { createWalletForUser, getWalletForUser } from './wallet.service';
 
 export async function getWallet(req: AuthRequest, res: Response): Promise<void> {
   try {

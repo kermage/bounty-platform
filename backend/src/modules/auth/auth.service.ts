@@ -1,7 +1,7 @@
 import { OAuth2Client } from 'google-auth-library';
 import jwt from 'jsonwebtoken';
-import { config } from '../../config.js';
-import { db } from '../../db/client.js';
+import { config } from '../../config';
+import { db } from '../../db/client';
 
 const googleClient = new OAuth2Client(config.auth.googleClientId);
 
@@ -31,7 +31,7 @@ export async function verifyGoogleToken(idToken: string): Promise<GoogleUserInfo
 
 export function signJWT(userId: string): string {
   return jwt.sign({ sub: userId }, config.auth.jwtSecret, {
-    expiresIn: config.auth.jwtExpiry,
+    expiresIn: config.auth.jwtExpiry as any,
   });
 }
 

@@ -2,10 +2,10 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
-import { connectDB } from './db/client.js';
-import authRoutes from './modules/auth/auth.routes.js';
-import walletRoutes from './modules/wallet/wallet.routes.js';
-import userRoutes from './modules/users/user.routes.js';
+import { connectDB } from './db/client';
+import authRoutes from './modules/auth/auth.routes';
+import walletRoutes from './modules/wallet/wallet.routes';
+import userRoutes from './modules/users/user.routes';
 
 dotenv.config();
 

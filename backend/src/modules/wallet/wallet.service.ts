@@ -1,6 +1,6 @@
 import { MeshWallet, BlockfrostProvider } from '@meshsdk/core';
-import { config } from '../../config.js';
-import { db } from '../../db/client.js';
+import { config } from '../../config';
+import { db } from '../../db/client';
 import crypto from 'crypto';
 
 const provider = new BlockfrostProvider(config.blockchain.blockfrostApiKey);

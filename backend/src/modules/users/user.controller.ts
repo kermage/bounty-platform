@@ -1,6 +1,6 @@
 import { Response } from 'express';
-import { AuthRequest } from '../../middleware/auth.js';
-import { db } from '../../db/client.js';
+import { AuthRequest } from '../../middleware/auth';
+import { db } from '../../db/client';
 
 export async function getMe(req: AuthRequest, res: Response): Promise<void> {
   try {
