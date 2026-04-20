@@ -2,6 +2,10 @@
   "name": "bounty-platform",
   "private": true,
   "version": "0.1.0",
+  "engines": {
+    "node": "22",
+    "pnpm": "9"
+  },
   "packageManager": "pnpm@9.15.4",
   "scripts": {
     "dev": "pnpm -r dev",
