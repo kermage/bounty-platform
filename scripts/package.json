@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "dependencies": {
-    "@meshsdk/core": "^1.7.2",
+    "@meshsdk/core": "1.9.0-beta.102",
     "@meshsdk/wallet": "^1.1.5",
     "dotenv": "^16.4.7"
   }

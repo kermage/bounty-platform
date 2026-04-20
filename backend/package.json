@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@meshsdk/core": "^1.8.14",
+    "@meshsdk/core": "1.9.0-beta.102",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
