@@ -4,6 +4,7 @@
   "type": "module",
   "private": true,
   "dependencies": {
-    "lucid-cardano": "^0.10.5"
+    "@meshsdk/core": "^1.7.2",
+    "@meshsdk/wallet": "^1.1.5"
   }
 }

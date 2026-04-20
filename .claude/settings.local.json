@@ -5,7 +5,10 @@
       "Bash(cp //aiagent-machine/openclaw/bounty-platform/contracts/src/types/bounty.ak //aiagent-machine/openclaw/bounty-platform/contracts/lib/types/bounty.ak)",
       "Bash(cp //aiagent-machine/openclaw/bounty-platform/contracts/src/tests/bounty_escrow_tests.ak //aiagent-machine/openclaw/bounty-platform/contracts/lib/tests/bounty_escrow_tests.ak)",
       "Bash(cardano-cli --version)",
-      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); lovelace=[a for a in d.get\\('amount',[]\\) if a['unit']=='lovelace']; print\\('Balance:', int\\(lovelace[0]['quantity']\\)/1_000_000 if lovelace else 0, 'tADA'\\) if 'amount' in d else print\\(d\\)\")"
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); lovelace=[a for a in d.get\\('amount',[]\\) if a['unit']=='lovelace']; print\\('Balance:', int\\(lovelace[0]['quantity']\\)/1_000_000 if lovelace else 0, 'tADA'\\) if 'amount' in d else print\\(d\\)\")",
+      "Bash(python3 -c \"import json,sys; bp=json.load\\(sys.stdin\\); print\\('plutusVersion:', bp.get\\('preamble',{}\\).get\\('plutusVersion','not set'\\)\\); v=bp['validators'][0]; print\\('title:', v['title']\\); print\\('compiledCode prefix:', v['compiledCode'][:20]\\)\")",
+      "Bash(node -e \"const bp=require\\('//aiagent-machine/openclaw/bounty-platform/contracts/plutus.preview.json'\\); console.log\\(JSON.stringify\\(bp.preamble\\)\\); console.log\\(bp.validators[0].title\\);\")",
+      "Bash(node -e ':*)"
     ]
   }
 }
